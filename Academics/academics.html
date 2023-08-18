@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+  <title>Department Page</title>
+</head>
+<body>
+  <nav>
+    <ul>
+        <li><a href="../Home/homepage.html">Home</a></li>
+        <li><a href="academics.html">Academics</a></li>
+        <li><a href="">News</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact Us</a></li>
+    </ul>
+</nav>
+  <div class="container">
+    <h1>Department Dropdown</h1>
+    <select id="departmentDropdown">
+      <option value="CSE">Computer Science & Engineering</option>
+      <option value="department2">Department 2</option>
+      <!-- Add more department options as needed -->
+    </select>
+
+    <select id="semesterDropdown">
+      <option value="semester1">Semester 1</option>
+      <option value="semester2">Semester 2</option>
+      <!-- Add more semester options as needed -->
+    </select>
+
+    <div class="subjects">
+      <h2>Subjects</h2>
+      <ul id="subjectsList">
+        <!-- Subjects will be dynamically populated based on selection -->
+      </ul>
+    </div>
+    <div id="subjectContentContainer"></div>
+    <div class="syllabus">
+      <h2>Syllabus</h2>
+      <p>Syllabus content here.</p>
+    </div>
+
+    <div class="mindmap">
+      <h2>Mind Map</h2>
+      <p>Mind map content here.</p>
+    </div>
+  </div>
+
+  <script src="academics.js"></script>
+</body>
+</html>
