@@ -22,7 +22,7 @@ header {
 }
 
 #loginPrompt{
-    padding-right: 15px;
+    padding-right: 5px;
     text-align: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: large;
@@ -83,30 +83,52 @@ p{
 }
 
 .faq-section {
-    max-width: 800px;
+    max-width: 90%;
     margin: 0 auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgba(92, 112, 124, 0.235);
 }
 
 .faq {
     margin-bottom: 20px;
 }
 
+.faq-header{
+    font-weight: bolder;
+}
 .question {
     display: flex;
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
+    background-color: darkgray;
+    padding-left: 15px;
+    padding-right: 10px;
+}
+
+.question-string{
+    font-size: larger;
+    font-weight: bold;
 }
 
 .toggle-answer {
     background: none;
     border: none;
-    font-size: 20px;
+    font-size: 30px;
+    font-weight: bolder;
     cursor: pointer;
 }
 
 .answer {
     display: none;
+    background-color: #10033a29;
+    color: rgb(35, 34, 34);
+    font-weight: bold;
+    font-size: large;
+    padding: 5px;
 }
 
 .answer.active {
