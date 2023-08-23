@@ -3,12 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
- 
-  <title>Department Page</title>
+  <link rel="stylesheet" href="academics.css">
+  <link rel="shortcut icon" href="Drawable/Icons/favicon.ico" type="image/x-icon">
+  <title>Academics</title>
 </head>
 <body>
-  <nav>
-    <ul>
+  <nav class="navbar">
+    <ul class="list">
         <li><a href="../Home/homepage.html">Home</a></li>
         <li><a href="academics.html">Academics</a></li>
         <li><a href="">News</a></li>
@@ -16,8 +17,9 @@
         <li><a href="#">Contact Us</a></li>
     </ul>
 </nav>
+<main class="main-content">
   <div class="container">
-    <h1>Department Dropdown</h1>
+    <h1 class="dept-string">Department Dropdown</h1>
     <select id="departmentDropdown">
       <option value="CSE">Computer Science & Engineering</option>
       <option value="department2">Department 2</option>
@@ -47,6 +49,8 @@
       <p>Mind map content here.</p>
     </div>
   </div>
+</main>
+  
 
   <script src="academics.js"></script>
 </body>

@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 10px;
+}
+
+li{
+    list-style: none;
+    padding-left: 20px;
+}
+.navbar{
+    top: 0;
+    width: 100%;
+    padding: 0;
+    position: fixed;
+    height: 100px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    background-color: #340970;
+    padding: 20px 0;
+}
+
+.list li {
+    margin: 0 10px;
+    padding-left: 20px;
+    padding-right: 50px;
+}
+
+.list a {
+    color: white;
+    font-size: x-large;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: black;
+    color: gold;
+    text-decoration: underline;
+}
+.main-content{
+    height: 200vh;
+    margin-top: 80px;
+}
+
+.container{
+    background-color: azure
+}
+
+.dept-string{
+    font-weight: bolder;
+    background-color: rgb(36, 13, 69);
+    color: white;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+
+#departmentDropdown{
+    margin: 10px;
+    background-color: rgb(14, 38, 125);
+    padding-right: 5px;
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+#semesterDropdown{
+    margin: 10px;
+    background-color: rgb(30, 109, 54);
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.subjects{
+    margin: 15px;
+    background-color: aquamarine;
+    width: 45%;
+    border-radius: 10px;
+    font-size: large;
+    font-weight: bolder;
+}
+#subjectsList{
+    padding-left: 10px;
+    background-color: rgb(28, 89, 96);
+    border-radius: 10px;
+    padding-left: 5%;
+    
+    width: 93%;
+    color: white;
+}
