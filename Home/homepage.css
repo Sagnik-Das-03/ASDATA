@@ -49,6 +49,7 @@ header {
 .loginButton {
     background-color: #3498db;
     color: white;
+    transition: all 0.5s ease-out;
     height: 50px;
     border: none;
     padding: 5px;
@@ -56,12 +57,14 @@ header {
     padding-left: 30px;
     border-radius: 5px;
     font-weight: bolder;
+    margin-right: 20px;
     font-size: large;
 }
 
 .loginButton:hover{
-    background-color: rgb(5, 62, 52);
-    color: yellow;
+    background-color: rgb(19, 21, 21);
+    height: 55px;
+    color: goldenrod;
 }
 
 
@@ -80,6 +83,7 @@ nav li {
 
 nav a {
     color: white;
+    transition: all 0.5s ease-out;
     font-size: larger;
     font-weight: bold;
     text-decoration: none;
@@ -88,7 +92,7 @@ nav a {
 nav a:hover {
     background-color: black;
     color: gold;
-    text-decoration: underline;
+    padding: 10px 25px 10px 25px;
 }
 
 main{
@@ -101,7 +105,7 @@ main{
     margin: 0 auto;
     padding-left: 25px;
     padding-right: 25px;
-    padding-top: 10px;
+    padding-top: 20px;
     padding-bottom: 10px;
     border-radius: 10px;
     background-color: rgba(92, 112, 124, 0.235);
@@ -142,12 +146,18 @@ main{
 .toggle-answer {
     background: none;
     color: white;
+    transition: all 0.2s ease-out;
     border: none;
     font-size: 30px;
     font-weight: bolder;
     cursor: pointer;
 }
-
+.toggle-answer:hover{
+    font-size: 35px;
+    background-color: rgb(30, 35, 33);
+    padding: 5px;
+    color: gold;
+}
 .answer {
     display: none;
     background-color: #10033a29;
@@ -163,5 +173,25 @@ main{
     display: block;
 }
 
+footer{
+    background-color: rgb(36, 34, 34);
+}
 
+.footer-text{
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 50px;
+    text-align: left;
+    font-size: small;
+    font-weight: 400;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600;
+    color: aliceblue;
+}
+
+.footer-text a{
+    color: aquamarine;
+    font-weight: bolder;
+}
 

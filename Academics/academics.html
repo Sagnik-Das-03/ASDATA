@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,51 +8,72 @@
   <link rel="shortcut icon" href="Drawable/Icons/favicon.ico" type="image/x-icon">
   <title>Academics</title>
 </head>
+
 <body>
   <nav class="navbar">
     <ul class="list">
-        <li><a href="../Home/homepage.html">Home</a></li>
-        <li><a href="academics.html">Academics</a></li>
-        <li><a href="">News</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Contact Us</a></li>
+      <li><a href="../Home/homepage.html">Home</a></li>
+      <li><a href="academics.html">Academics</a></li>
+      <li><a href="">News</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Contact Us</a></li>
     </ul>
-</nav>
-<main class="main-content">
-  <div class="container">
-    <h1 class="dept-string">Department Dropdown</h1>
-    <select id="departmentDropdown">
-      <option value="CSE">Computer Science & Engineering</option>
-      <option value="department2">Department 2</option>
-      <!-- Add more department options as needed -->
-    </select>
+  </nav>
+  <main class="main-content">
+    <div class="container">
+      <h1 class="dept-string">Department Dropdown</h1>
+      <select id="departmentDropdown">
+        <option value="CSE">Computer Science & Engineering</option>
+        <option value="department2">Department 2</option>
+        <!-- Add more department options as needed -->
+      </select>
 
-    <select id="semesterDropdown">
-      <option value="semester1">Semester 1</option>
-      <option value="semester2">Semester 2</option>
-      <!-- Add more semester options as needed -->
-    </select>
+      <select id="semesterDropdown">
+        <option value="semester1">Semester 1</option>
+        <option value="semester2">Semester 2</option>
+        <!-- Add more semester options as needed -->
+      </select>
 
-    <div class="subjects">
-      <h2>Subjects</h2>
-      <ul id="subjectsList">
-        <!-- Subjects will be dynamically populated based on selection -->
-      </ul>
+      <div class="subjects">
+        <h2>Subjects</h2>
+        <ul id="subjectsList">
+          <!-- Subjects will be dynamically populated based on selection -->
+        </ul>
+      </div>
+      <div id="subjectContentContainer"></div>
+      <div class="syllabus">
+        <h2>Syllabus</h2>
+        <p>Syllabus content here.</p>
+      </div>
+
+      <div class="mindmap">
+        <h2>Mind Map</h2>
+        <p>Mind map content here.</p>
+      </div>
     </div>
-    <div id="subjectContentContainer"></div>
-    <div class="syllabus">
-      <h2>Syllabus</h2>
-      <p>Syllabus content here.</p>
+    <div class="container-right">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex quod provident amet harum veniam quibusdam
+        dignissimos rerum fuga laborum dolore!</p>
     </div>
+  </main>
 
-    <div class="mindmap">
-      <h2>Mind Map</h2>
-      <p>Mind map content here.</p>
+  <footer>
+    <div class="footer-text">
+      <p>&copy Copyright 2023 ASDATA
+        Licensed under the Apache License, Version 2.0 (the "License");
+        you may not use this file except in compliance with the License.
+        You may obtain a copy of the License at
+        <a href=" http://www.apache.org/licenses/LICENSE-2.0"> http://www.apache.org/licenses/LICENSE-2.0</a>
+        <br>
+        Unless required by applicable law or agreed to in writing, software
+        distributed under the License is distributed on an "AS IS" BASIS,
+        WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+        See the License for the specific language governing permissions and
+        limitations under the License.
+      </p>
     </div>
-  </div>
-</main>
-  
-
+  </footer>
   <script src="academics.js"></script>
 </body>
+
 </html>
