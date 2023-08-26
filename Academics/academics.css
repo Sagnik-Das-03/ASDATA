@@ -1,13 +1,14 @@
-*{
+* {
     margin: 0;
     padding: 10px;
 }
 
-li{
+li {
     list-style: none;
     padding-left: 20px;
 }
-.navbar{
+
+.navbar {
     top: 0;
     width: 100%;
     padding: 0;
@@ -26,6 +27,7 @@ li{
     margin: 0 10px;
     padding-left: 20px;
     padding-right: 50px;
+    box-sizing: border-box;
 }
 
 .list a {
@@ -39,27 +41,30 @@ li{
 nav a:hover {
     background-color: black;
     color: gold;
+    padding-top: 20px;
+    padding-bottom: 15px;
     padding-left: 25px;
     padding-right: 25px;
 }
-.main-content{
+
+.main-content {
     height: 200vh;
     margin-top: 50px;
     display: inline-flex;
     gap: 25px;
 }
 
-.container{
+.container {
     background-color: azure;
     width: 70%;
 }
 
-.container-right{
+.container-right {
     width: 30%;
     background-color: aqua;
 }
 
-.dept-string{
+.dept-string {
     font-weight: bolder;
     width: 60%;
     background-color: rgb(36, 13, 69);
@@ -70,7 +75,7 @@ nav a:hover {
     border-radius: 10px;
 }
 
-#departmentDropdown{
+#departmentDropdown {
     margin: 10px;
     background-color: rgb(14, 38, 125);
     padding-right: 5px;
@@ -79,7 +84,7 @@ nav a:hover {
     font-weight: bold;
 }
 
-#semesterDropdown{
+#semesterDropdown {
     margin: 10px;
     background-color: rgb(30, 109, 54);
     color: white;
@@ -87,7 +92,7 @@ nav a:hover {
     font-weight: bold;
 }
 
-.subjects{
+.subjects {
     margin: 15px;
     background-color: aquamarine;
     width: 45%;
@@ -95,7 +100,8 @@ nav a:hover {
     font-size: large;
     font-weight: bolder;
 }
-#subjectsList{
+
+#subjectsList {
     padding-left: 10px;
     background-color: rgb(32, 123, 123);
     border-radius: 10px;
@@ -106,12 +112,15 @@ nav a:hover {
     color: white;
 }
 
+.hidden {
+    display: none;
+}
 
-footer{
+footer {
     background-color: rgb(36, 34, 34);
 }
 
-.footer-text{
+.footer-text {
     padding-top: 30px;
     padding-left: 20px;
     padding-right: 20px;

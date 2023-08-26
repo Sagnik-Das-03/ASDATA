@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 10px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+li {
+  list-style: none;
+  padding-left: 20px;
+}
+
+.navbar {
+  top: 0;
+  width: 100%;
+  padding: 0;
+  position: fixed;
+  height: 100px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  background-color: #340970;
+  padding: 5px;
+}
+
+.list li {
+  margin: 0 10px;
+  padding-left: 20px;
+  padding-right: 50px;
+}
+
+.list a {
+  color: white;
+  transition: all 0.5s ease-out;
+  font-size: large;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: black;
+  color: gold;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+section {
+  margin: 2rem;
+}
+
+h2 {
+  color: #333;
+  padding-bottom: 0.5rem;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  flex-flow: row wrap;
+  box-sizing: border-box;
+  height: 150vh;
+}
+
+#college-news{
+  background-color: aquamarine;
+  border-color: black;
+  flex-grow: 3;
+  padding: 20px 100px 100px 100px;
+}
+
+#local-tech-news{
+  background-color: aqua;
+  border-color: black;
+  flex-grow: 3;
+  padding: 20px 100px 100px 100px;
+}
+
+#club-news{
+  background-color: sandybrown;
+  flex-grow: 3;
+  border-color: black;
+  padding: 20px 100px 100px 100px;
+}
+
+.hidden {
+  display: none;
+}
+
+
+footer {
+  background-color: rgb(36, 34, 34);
+}
+
+.footer-text {
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 50px;
+  text-align: left;
+  font-size: small;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 600;
+  color: aliceblue;
+}
