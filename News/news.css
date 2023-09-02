@@ -1,10 +1,6 @@
 * {
   margin: 0;
-  padding: 10px;
-}
-
-body {
-  font-family: Arial, sans-serif;
+  padding: 0;
 }
 
 li {
@@ -12,25 +8,44 @@ li {
   padding-left: 20px;
 }
 
+i {
+  padding-right: 10px;
+}
+
+body {
+  align-content: center;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, rgba(0, 0, 255, 0.20), rgba(0, 139, 139, 0.35));
+  margin: 0;
+  padding-top: 100px;
+  height: 100vh;
+}
+
 .navbar {
+  background: linear-gradient(to right, rgb(52, 9, 112), rgba(0, 0, 255, 0.6));
   top: 0;
   width: 100%;
   padding: 0;
   position: fixed;
-  height: 100px;
+  z-index: 1;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 .navbar ul {
   list-style: none;
   display: flex;
-  background-color: #340970;
   padding: 5px;
 }
 
 .list li {
   margin: 0 10px;
   padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   padding-right: 50px;
+  box-sizing: border-box;
 }
 
 .list a {
@@ -50,62 +65,76 @@ nav a:hover {
   padding-right: 25px;
 }
 
-section {
-  margin: 2rem;
-}
-
-h2 {
-  color: #333;
-  padding-bottom: 0.5rem;
-}
-
 .container {
+  height: 60%;
+  width: 80%;
+  background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.1));
+  border-radius: 2rem;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.sections-row {
+  min-height: 80%;
+  padding: 10px;
   display: flex;
-  justify-content: space-around;
-  align-items: stretch;
-  flex-flow: row wrap;
-  box-sizing: border-box;
-  height: 150vh;
+  justify-content: space-between;
 }
 
-#college-news{
-  background-color: aquamarine;
-  border-color: black;
-  flex-grow: 3;
-  padding: 20px 100px 100px 100px;
+.section {
+  min-height: 60%;
+  background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.5));
+  border-radius: 10px;
+  flex: 1;
+  margin: 0 15px;
+  border-radius: 15px;
+  padding: 10px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-#local-tech-news{
-  background-color: aqua;
-  border-color: black;
-  flex-grow: 3;
-  padding: 20px 100px 100px 100px;
+.section h2 {
+  padding-top: 15px;
+  padding-left: 15px;
+  cursor: pointer;
 }
 
-#club-news{
-  background-color: sandybrown;
-  flex-grow: 3;
-  border-color: black;
-  padding: 20px 100px 100px 100px;
-}
-
-.hidden {
+.news-list {
   display: none;
 }
 
+.toggle-button {
+  cursor: pointer;
+  background-color: #007BFF;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  width: 100%;
+}
 
 footer {
-  background-color: rgb(36, 34, 34);
+  margin-top: 20px;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  background-color: rgb(40, 40, 40);
+  border-radius: 10px;
 }
 
 .footer-text {
   padding-top: 30px;
   padding-left: 20px;
-  padding-right: 20px;
+  padding-right: 15px;
   padding-bottom: 50px;
   text-align: left;
   font-size: small;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-weight: 600;
   color: aliceblue;
+}
+
+.footer-text a {
+  color: aquamarine;
 }

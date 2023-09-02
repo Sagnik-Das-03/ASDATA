@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 10px;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, rgba(0, 0, 255, 0.20), rgba(0, 139, 139, 0.35));
+}
+
+li {
+  list-style: none;
+  padding-left: 20px;
+}
+
+.navbar {
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  padding: 0;
+  position: fixed;
+  height: 100px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  background-color: #340970;
+  padding: 5px;
+}
+
+.list li {
+  margin: 0 10px;
+  padding-left: 20px;
+  padding-right: 50px;
+  box-sizing: border-box;
+}
+
+.list a {
+  color: white;
+  transition: all 0.5s ease-out;
+  font-size: large;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: black;
+  color: gold;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.form-group {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.glass-parent{
+  display: flex;
+  justify-content: center;
+}
+
+.glass-container {
+  margin-top: 80px;
+  margin-bottom: 40px;
+  background: rgba(255, 255, 255, 0.284);
+  width: 50%;
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.glass-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+input,
+textarea {
+  height: 10%;
+  width: 60%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+  color: white;
+  margin-top: 5px;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  font-size: large;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.5s ease-out;
+}
+
+button:hover {
+  background: linear-gradient(to right, #0072ff, #00c6ff);
+  padding: 15px 5px 15px 5px;
+  border: 1px solid white;
+  color: whitesmoke;
+}
+
+footer {
+  background-color: #404040;
+  border-radius: 10px;
+}
+
+.footer-text {
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 15px;
+  padding-bottom: 50px;
+  text-align: left;
+  font-size: small;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 600;
+  color: aliceblue;
+}
+
+.footer-text a{
+  color: aquamarine;
+}

@@ -1,25 +1,36 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
+
 body {
-    margin: 10px;
+    margin: 0;
+    background: linear-gradient(to bottom right, rgba(0, 0, 255, 0.20), rgba(0, 139, 139, 0.35));
     padding: 0;
     font-family: Arial, sans-serif;
 }
-.header-container{
+
+.header-container {
     box-sizing: border-box;
     position: fixed;
     top: 0;
     width: 100%;
     height: 300px;
 }
+
+.flex {
+    display: flex;
+    width: 120%;
+    justify-content: center;
+    flex-flow: row;
+}
+
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: rgb(255, 217, 0);
+    background: linear-gradient(to bottom right, rgb(88, 136, 248), rgb(215, 214, 214))
 }
 
 .logo img {
@@ -33,7 +44,7 @@ header {
 }
 
 
-#loginPrompt{
+#loginPrompt {
     padding-right: 5px;
     text-align: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -41,15 +52,16 @@ header {
     font-weight: bold;
 
 }
+
 .admin-icon img {
     height: 50px;
     margin-right: 10px;
 }
 
 .loginButton {
-    background-color: #3498db;
+    background: linear-gradient(to bottom right, blue, RoyalBlue);
     color: white;
-    transition: all 0.5s ease-out;
+    transition: all 0.2s ease-out;
     height: 50px;
     border: none;
     padding: 5px;
@@ -61,18 +73,28 @@ header {
     font-size: large;
 }
 
-.loginButton:hover{
-    background-color: rgb(19, 21, 21);
-    height: 55px;
-    color: goldenrod;
+.loginButton:hover {
+    background: linear-gradient(to bottom left, blue, black);
+    height: 50px;
+    color: white;
 }
 
+nav {
+    background: linear-gradient(to right, rgb(52, 9, 112), rgba(0, 0, 255, 0.6));
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
 
 nav ul {
     list-style: none;
     display: flex;
-    background-color: #340970;
     padding: 10px 0;
+}
+
+i {
+    padding-right: 10px;
 }
 
 nav li {
@@ -95,7 +117,7 @@ nav a:hover {
     padding: 10px 25px 10px 25px;
 }
 
-main{
+main {
     margin-top: 170px;
     padding: 10px;
 }
@@ -105,17 +127,19 @@ main{
     margin: 0 auto;
     padding-left: 25px;
     padding-right: 25px;
-    padding-top: 20px;
-    padding-bottom: 10px;
+    padding-top: 30px;
+    padding-bottom: 20px;
     border-radius: 10px;
-    background-color: rgba(92, 112, 124, 0.235);
+    background-color: rgba(255, 255, 255, 0.074);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 }
 
 .faq {
     margin-bottom: 20px;
 }
 
-.faq-header{
+.faq-header {
     font-size: x-large;
     font-weight: bolder;
     background-color: #160a64eb;
@@ -125,6 +149,7 @@ main{
     padding-bottom: 15px;
     padding-left: 10px;
 }
+
 .question {
     display: flex;
     justify-content: space-between;
@@ -138,7 +163,7 @@ main{
     padding-right: 10px;
 }
 
-.question-string{
+.question-string {
     font-size: larger;
     font-weight: bold;
 }
@@ -152,12 +177,14 @@ main{
     font-weight: bolder;
     cursor: pointer;
 }
-.toggle-answer:hover{
+
+.toggle-answer:hover {
     font-size: 35px;
     background-color: rgb(30, 35, 33);
     padding: 5px;
     color: gold;
 }
+
 .answer {
     display: none;
     background-color: #10033a29;
@@ -173,11 +200,12 @@ main{
     display: block;
 }
 
-footer{
-    background-color: rgb(36, 34, 34);
+footer {
+    background-color: rgb(40, 40, 40);
+    border-radius: 10px;
 }
 
-.footer-text{
+.footer-text {
     padding-top: 30px;
     padding-left: 20px;
     padding-right: 20px;
@@ -190,8 +218,6 @@ footer{
     color: aliceblue;
 }
 
-.footer-text a{
+.footer-text a {
     color: aquamarine;
-    font-weight: bolder;
 }
-
