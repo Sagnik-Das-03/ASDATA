@@ -27,7 +27,6 @@ body {
   background: linear-gradient(to bottom, rgba(0, 0, 255, 0.20), rgba(0, 139, 139, 0.35));
   margin: 0;
   padding-top: 100px;
-  height: 120vh;
 }
 
 .navbar {
@@ -74,7 +73,9 @@ nav a:hover {
   padding-left: 25px;
   padding-right: 25px;
 }
-.circle1, .circle2{
+
+.circle1,
+.circle2 {
   border-radius: 50%;
   margin: 5%;
   z-index: -1;
@@ -83,22 +84,24 @@ nav a:hover {
   backdrop-filter: blur(5rem);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-.circle1{
+
+.circle1 {
   overflow: hidden;
   position: absolute;
   background: linear-gradient(to top left, rgba(0, 0, 255, 0.7), rgba(0, 255, 255, 0.1));
   top: 0%;
   left: 0%;
 }
-.circle2{
+
+.circle2 {
   position: absolute;
   background: linear-gradient(to bottom right, rgba(0, 0, 255, 0.5), rgba(0, 255, 255, 0.1));
   bottom: 0%;
   right: 0%;
 }
+
 .container {
   margin-left: 15%;
-  height: 60%;
   width: 70%;
   background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.1));
   border-radius: 2rem;
@@ -109,14 +112,15 @@ nav a:hover {
 }
 
 .sections-row {
-  min-height: 80%;
   padding: 10px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  align-content: stretch;
 }
 
 .section {
-  min-height: 60%;
+  height: 50vh;
   background: linear-gradient(to top left, rgba(0, 0, 255, 0.3), rgb(127, 255, 212, 0.5));
   border-radius: 10px;
   flex: 1;
@@ -140,11 +144,12 @@ nav a:hover {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
-.section h2:hover{
+.section h2:hover {
   transition: all 0.8s, ease-in;
   background: linear-gradient(to bottom right, rgba(0, 0, 255, 0.5), rgba(0, 255, 255, 0.5));
   color: whitesmoke;
 }
+
 .news-list {
   display: none;
 }
@@ -153,23 +158,26 @@ nav a:hover {
   cursor: pointer;
   background: linear-gradient(to right, #00c6ff, #0072ff);
   color: #fff;
+  margin-top: 20px;
   padding: 10px 20px;
   border: none;
+  transition: all 0.9s ease-out;
   border-radius: 5px;
   font-weight: bold;
   width: 80%;
   margin-left: 10%;
 }
 
-.toggle-button:hover{
+.toggle-button:hover {
   background: linear-gradient(to right, #0072ff, #00c6ff);
-  padding: 15px 5px 15px 5px;
+  transform: scale(1.1);
   border: 1px solid white;
   color: whitesmoke;
 
 }
+
 footer {
-  position: fixed;
+  position: relative;
   bottom: 0;
   width: 100%;
   margin-top: 40px;

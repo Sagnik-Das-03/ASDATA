@@ -245,7 +245,7 @@ main {
 footer {
     background-color: rgb(40, 40, 40);
     border-radius: 10px;
-    position: fixed;
+    position: relative;
     bottom: 0;
     width: 100%;
 }

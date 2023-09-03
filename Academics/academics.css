@@ -39,8 +39,6 @@ h2 {
 
 body {
     background: linear-gradient(to bottom, rgba(0, 0, 255, 0.20), rgba(0, 139, 139, 0.35));
-    height: 100vh;
-    width: 100vw;
 }
 
 
@@ -103,7 +101,7 @@ nav a:hover {
 }
 
 .rectangle1, .rectangle2{
-    height: 50rem;
+    height: 40rem;
     z-index: -1;
     width: 30rem;
     border-radius: 2rem;
@@ -113,14 +111,15 @@ nav a:hover {
 .rectangle1{
     top: 2%;
     left: 0%;
-    background: linear-gradient(to bottom right, rgba(255, 165, 0, 0.8), rgba(55, 0, 255,0.5));
+    background: linear-gradient(to bottom right, rgba(255, 165, 0, 0.6), rgba(55, 0, 255,0.5));
 }
 
 .rectangle2{
     right: 0%;
     top: 25%;
     height: 40rem;
-    background: linear-gradient(to top left, rgba(255, 165, 0, 0.8), rgba(55, 0, 255,0.5));
+    background: linear-gradient(to top left, rgba(255, 165, 0, 0.3), rgba(55, 0, 255,0.7));
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .container {
@@ -146,7 +145,7 @@ nav a:hover {
     border-radius: 10px;
     width: 70%;
     height: 80%;
-    background: linear-gradient(to top left, rgba(255, 255, 255, 0.7), rgba(0, 255, 255, 0.1));
+    background: linear-gradient(to top left, rgba(255, 255, 255, 0.1), rgba(0, 255, 255, 0.1));
     overflow: scroll;
     backdrop-filter: blur(10px);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -173,6 +172,7 @@ nav a:hover {
     /* 16:9 aspect ratio */
     height: 0;
     overflow: hidden;
+    border-radius: 20px;
 }
 
 .video-container iframe {
@@ -189,6 +189,7 @@ nav a:hover {
     /* 16:9 aspect ratio */
     height: 0;
     overflow: hidden;
+    border-radius: 20px;
 }
 
 .video-container-left iframe {
@@ -247,8 +248,8 @@ nav a:hover {
 }
 
 #semesterDropdown {
-    background: linear-gradient(to right, rgba(0, 255, 0, 0.3), rgba(200, 255, 0, 0.1));
-    background-color: rgba(127, 255, 212, 0.700);
+    background: linear-gradient(to right, rgba(133, 255, 133, 0.4), rgba(232, 255, 148, 0.6));
+    background-color: rgba(0, 255, 170, 0.2);
     padding-top: 10px;
     padding-bottom: 10px;
     padding-right: 5px;
@@ -326,7 +327,7 @@ footer {
     margin-top: 20px;
     background-color: rgb(40, 40, 40);
     border-radius: 10px;
-    position: fixed;
+    position: relative;
     bottom: 0;
     width: 100%;
 }
