@@ -103,7 +103,7 @@ nav a:hover {
 .rectangle1, .rectangle2{
     height: 40rem;
     z-index: -1;
-    width: 30rem;
+    width: 25rem;
     border-radius: 2rem;
     position: absolute;
 }

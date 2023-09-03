@@ -79,7 +79,6 @@ nav a:hover {
   z-index: -1;
   width: 30rem;
   position: absolute;
-  border-radius: 15%;
   clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
   backdrop-filter: blur(10px);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -87,15 +86,27 @@ nav a:hover {
 
 .rectangle1{
   top: 10%;
-  left: 8%;
+  left: 6%;
   background: linear-gradient(to bottom right, rgba(0, 255, 0, 0.1), rgba(55, 0, 255,0.5));
 }
 
 .rectangle2{
-  right: 8%;
-  top: 35%;
+  right: 6%;
+  bottom: 8%;
   background: linear-gradient(to top left, rgba(0, 255, 0, 0.1), rgba(55, 0, 255,0.7));
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.message{
+  position: absolute;
+  border-radius: 20px;
+  z-index: -1;
+  width: 15rem;
+  height: 15rem;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+  background: linear-gradient(to bottom right, rgba(0, 0, 255, 0.45), rgba(0, 255, 255, 0.10));
+  top: 10%;
+  right: 15%;
 }
 
 .form-group {

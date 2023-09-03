@@ -76,11 +76,12 @@ nav a:hover {
 
 .circle1,
 .circle2 {
-  border-radius: 50%;
+  clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+  border-radius: 10%;
   margin: 5%;
   z-index: -1;
-  height: 20em;
-  width: 20rem;
+  height: 25rem;
+  width: 25rem;
   backdrop-filter: blur(5rem);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -88,22 +89,23 @@ nav a:hover {
 .circle1 {
   overflow: hidden;
   position: absolute;
-  background: linear-gradient(to top left, rgba(0, 0, 255, 0.7), rgba(0, 255, 255, 0.1));
+  background: linear-gradient(to top left, rgba(0, 0, 255, 0.5), rgba(0, 255, 255, 0.2));
   top: 0%;
-  left: 0%;
+  left: -3%;
 }
 
 .circle2 {
   position: absolute;
-  background: linear-gradient(to bottom right, rgba(0, 0, 255, 0.5), rgba(0, 255, 255, 0.1));
-  bottom: 0%;
-  right: 0%;
+  background: linear-gradient(to top left, rgba(0, 0, 255, 0.5), rgba(0, 255, 255, 0.2));
+  bottom: 2%;
+  right: -4%;
+  transform: rotate(180deg);
 }
 
 .container {
   margin-left: 15%;
   width: 70%;
-  background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.1));
+  background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.1));
   border-radius: 2rem;
   padding: 20px;
   z-index: 0;
