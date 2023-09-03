@@ -6,5 +6,3 @@ toggleButtons.forEach(button => {
         answer.classList.toggle('active');
     });
 });
-
-

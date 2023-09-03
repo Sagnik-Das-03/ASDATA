@@ -2,6 +2,8 @@
     padding: 0;
     margin: 0;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    min-zoom: 50%;
+    max-zoom: 90%
 }
 
 i{
@@ -12,11 +14,11 @@ body {
     margin: 0;
     background: linear-gradient(to bottom right, rgba(0, 0, 255, 0.20), rgba(0, 139, 139, 0.35));
     padding: 0;
-    font-family: Arial, sans-serif;
 }
 
 .header-container {
     box-sizing: border-box;
+    z-index: 1;
     position: fixed;
     top: 0;
     width: 100%;
@@ -126,19 +128,51 @@ nav a:hover {
 }
 
 main {
-    margin-top: 170px;
-    padding: 10px;
+    z-index: 0;
+    width: 75%;
+    margin: auto;
+    margin-top: 250px;
+    margin-bottom: 100px;
+    padding: 25px;
+    border-radius: 20px;
+    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.50), rgba(255, 255, 255, 0.25));
+    backdrop-filter: blur(20px);
+    box-shadow: 0 4px 6px rgba(40, 40, 40, 0.3);
 }
+
+.circle1, .circle2{
+    border-radius: 50%;
+    margin: 5%;
+    z-index: -1;
+    height: 20em;
+    width: 20rem;
+    backdrop-filter: blur(5rem);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  .circle1{
+    overflow: hidden;
+    position: absolute;
+    background: linear-gradient(to top left, rgba(0, 0, 255, 0.7), rgba(0, 255, 255, 0.1));
+    top: 15%;
+    left: 0%;
+  }
+  .circle2{
+    position: absolute;
+    background: linear-gradient(to bottom right, rgba(0, 0, 255, 0.5), rgba(0, 255, 255, 0.1));
+    top: 60%;
+    right: 0%;
+  }
 
 .faq-section {
     max-width: 90%;
     margin: 0 auto;
+    margin-bottom: 120px;
     padding-left: 25px;
     padding-right: 25px;
     padding-top: 30px;
     padding-bottom: 20px;
     border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.074);
+    background: linear-gradient(to bottom left, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.125));
     backdrop-filter: blur(10px);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 }
@@ -211,6 +245,9 @@ main {
 footer {
     background-color: rgb(40, 40, 40);
     border-radius: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 .footer-text {
