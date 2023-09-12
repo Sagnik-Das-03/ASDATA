@@ -25,9 +25,9 @@ const subjects = {
 
 
 const videoIDs = {
-  'Mathematics 1': ['', '', '', '', '', '','','',''], // Add multiple video IDs
-  'Physics 1': ['def456'],
-  'Chemistry': ['ghi789', 'uvw987'],
+  'Mathematics-IA': ['', '', '', '', '', '','','',''], // Add multiple video IDs
+  'Physics 1': ['','','',''],
+  'Basic Electrical Engineering': ['', '', '', ''],
   // Add more video IDs for other subjects
 };
 
