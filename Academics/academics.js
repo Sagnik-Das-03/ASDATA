@@ -8,14 +8,15 @@ const subjectContentContainer = document.getElementById('subjectContentContainer
 
 const subjects = {
   CSE: {
-    semester1: ['Mathematics 1', 'Physics 1', 'Chemistry 1'],
-    semester2: ['Mathematics 2', 'C programming', 'Chemistry 2'],
-    semester3: ['Computer Organization', 'Data Structures & Algorithms', 'Mathematics 3'],
-    semester4: ['Design and Analysis of Algorithms', 'Computer Architecture', 'Discrete Mathematics'],
+    semester1: ['Mathematics-IA', 'Physics 1', 'Basic Electrical Engineering'],
+    semester2: ['Mathematics-IIA', 'Programming for Problem Solving', 'Chemistry', 'English'],
+    semester3: ['Analog & Digital Electronics','Computer Organization', 'Data Structures & Algorithms', 'Mathematics-III(Differential Calculus)','Economics for Engineers(Humanities-II)'],
+    semester4: ['Design and Analysis of Algorithms', 'Computer Architecture', 'Discrete Mathematics', 'Formal Language & Automata Theory', 'Biology', 'Environmental Sciences'],
+    semester5:['Software Engineering', 'Operating System', 'Object Oriented Programming', 'Compiler Design', 'Artificial Intelligence', 'Industrial Management']
   },
   department2: {
-    semester1: ['History 1', 'Literature 1', 'Geography 1'],
-    semester2: ['History 2', 'Literature 2', 'Geography 2'],
+    semester1: ['S1', 'S2', 'S3'],
+    semester2: ['S1', 'S2', 'S3'],
   }
   // Add more departments, semesters, and subjects as needed
 };
@@ -24,9 +25,9 @@ const subjects = {
 
 
 const videoIDs = {
-  'Mathematics 1': ['', '', '', '', '', '','','','','','','','','','',''], // Add multiple video IDs
+  'Mathematics 1': ['', '', '', '', '', '','','',''], // Add multiple video IDs
   'Physics 1': ['def456'],
-  'Chemistry 1': ['ghi789', 'uvw987'],
+  'Chemistry': ['ghi789', 'uvw987'],
   // Add more video IDs for other subjects
 };
 
