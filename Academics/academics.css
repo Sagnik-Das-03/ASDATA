@@ -284,10 +284,6 @@ nav a:active{
     transform: scale(1.1);
 }
 
-.content {
-    padding: 15px;
-}
-
 .subjects {
     margin: 15px;
     padding: 15px;
@@ -304,7 +300,11 @@ nav a:active{
 .subjects h2{
     padding: 5px;
 }
-
+.content{
+    padding: 15px;
+    font-weight: bolder;
+    font-size: large;
+}
 #subjectsList {
     list-style: square;
     margin-top: 10px;
@@ -318,16 +318,19 @@ nav a:active{
     font-size: medium;
     color: black;
 }
-
+#subjectContentContainer h2{
+    padding: 10px;
+}
 
 .syllabus h2{
     padding: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .syllabus p{
     margin-left: 5px;
     padding: 5px;
+    font-weight: bold;
 }
 
 .syllabus a{
@@ -362,14 +365,23 @@ nav a:active{
     width: 60%;
     margin-top: 15px;
     margin-left: 20px;
-    padding: 8px 25px;
-    background: rgba(0, 255, 0, 0.5);
+    padding: 4px 25px;
+    background: rgba(0, 255, 150, 0.5);
     font-weight: bolder;
     text-overflow: clip;
     text-align: center;
     color: blue;
     border-radius: 10px;
     text-transform: capitalize;
+    transition: all 0.5s ease-out;
+}
+#questionPaperLink:hover{
+    transform: scale(1.1);
+}
+
+#questionPaperLink:active{
+    background-color: rgba(0, 0, 255, 0.5);
+    color: white;
 }
 
 footer {

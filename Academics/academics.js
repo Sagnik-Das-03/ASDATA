@@ -89,7 +89,7 @@ function updateQuestionPaperLink() {
     downloadLink.appendChild(semesterText);
     downloadLink.appendChild(downloadIcon);
     downloadLink.style.textDecoration = 'none';
-    downloadLink.style.color = 'navy'
+    downloadLink.style.color = 'navy';
     downloadLink.target = '_blank';
 
     questionPaperLink.innerHTML = '';
