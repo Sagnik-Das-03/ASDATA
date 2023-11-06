@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reference Material Page</title>
+    <link rel="stylesheet" href="reference.css">
+    <script src="https://kit.fontawesome.com/16288edb0a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h1>Reference Material Page</h1>
+        <a href="../Grid/grid.html"><i class="fa-solid fa-backward fa-sm" style="color: #ffffff;"></i>Back</a>
+    </header>
+    <main>
+        <section id="references">
+            <h2>References</h2>
+            <ul id="reference-list"></ul>
+            <button id="add-reference">Add Reference</button>
+        </section>
+        <section id="update-reference" class="hidden">
+            <h2>Update Reference</h2>
+            <form id="update-reference-form">
+                <label for="title">Title:</label>
+                <input type="text" id="title" required>
+                <label for="url">URL:</label>
+                <input type="text" id="url" required>
+                <button type="submit">Update</button>
+                <button type="button" id="cancel-update">Cancel</button>
+            </form>
+        </section>
+    </main>
+    <script src="reference.js"></script>
+</body>
+</html>

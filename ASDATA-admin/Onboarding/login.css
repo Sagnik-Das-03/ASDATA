@@ -1,0 +1,75 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    overflow: hidden;
+}
+body{
+    background: linear-gradient(to bottom right, aquamarine,  orange);
+    padding: 10%;
+}
+.glass-container {
+    background: linear-gradient(to bottom right, rgba(100, 250, 0, 0.4), rgba(0, 0, 255, 0.7));
+    border-radius: 10px;
+    padding: 6% 8%;
+    text-align: left;
+    margin: 0 auto;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#close{
+    position: absolute;
+    top: 2.5%;
+    right: 1.5%;
+    float: right;
+    background-color: red;
+    color: white;
+    font-weight: 900;
+    text-align: justify;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 1% 2%;
+    border-radius: 5%;
+    transition: all 0.4s ease-out;
+}
+#close:hover{
+    background-color: tomato;
+    transform: scale(1.1)
+}
+h1{
+    color: white;
+    margin: 20px 0px;
+}
+
+input{
+    font-size: medium;
+    padding: 10px 18% 10px 2%;
+    text-align: left;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+}
+button{
+    margin-top: 40px;
+    font-size: large;
+    font-weight: bolder;
+    padding: 10px 2%;
+    border-radius: 10px;
+    border: none;
+    margin-left: 5px; 
+    background: linear-gradient(to right, rgba(64, 104, 224, 0.9), rgba(0, 118, 0, 0.7));
+    transition: all 0.5s ease-out;
+    color: white;
+}
+
+button:hover{
+    transform: scale(1.2);
+    background: linear-gradient(to left ,purple, maroon);
+    color: gold;
+}
+
+button:active{
+    background: linear-gradient(to left, limegreen, darkgreen);
+    color: lime
+}

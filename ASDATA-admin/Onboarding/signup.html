@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" type="text/css" href="signup.css">
+</head>
+<body>
+    <div class="glass-container">
+        <h1>Sign Up as Admin</h1>
+        <form id="signup-form">
+            <h2>Name:</h2>
+            <input type="text" placeholder="Enter your name" id="name">
+            <br>
+            <h2>Username:</h2>
+            <input type="text" placeholder="Enter your username" id="username">
+            <br>
+            <h2>E-mail ID:</h2>
+            <input type="text" placeholder="Enter E-mail ID" id="email">
+            <br>
+            <h2>Password:</h2>
+            <input type="password" placeholder="Enter password" id="password">
+            <br>
+            <button type="submit">Sign Up</button>
+            <button type="button" id="clear-form">Clear Form</button> <!-- Add the Clear Form button -->
+            <div id="error-message" class="error-message"></div>
+            <div id="success-message" class="success-message"></div>
+        </form>
+    </div>
+    <script src="signup-validation.js"></script>
+</body>
+</html>

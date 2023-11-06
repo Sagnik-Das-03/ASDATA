@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Update Admin Page</title>
+    <link rel="stylesheet" href="collegenews.css">
+    <script src="https://kit.fontawesome.com/16288edb0a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h1>College News Update Admin Page</h1>
+        <div>
+            <a href="../Grid/grid.html"><i class="fa-solid fa-backward fa-sm" style="color: #ffffff;"></i>Back</a>
+        </div>
+    </header>
+    
+    <section class="admin-panel">
+        <h2>Add a News Update</h2>
+        <form id="news-form">
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" required>
+            <label for="content">Content:</label>
+            <textarea id="content" name="content" rows="4" required></textarea>
+            <button type="submit">Add News</button>
+        </form>
+    </section>
+
+    <section class="news-list">
+        <h2>News Updates</h2>
+        <ul id="news-list">
+            <!-- Existing news updates can be listed here -->
+            <li>
+                <h3>News Title</h3>
+                <p>News content goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <button class="edit-button">Edit</button>
+                <button class="delete-button">Delete</button>
+            </li>
+            <!-- Repeat this structure for each news update -->
+        </ul>
+    </section>
+
+    <script src="collegenews.js"></script>
+</body>
+</html>

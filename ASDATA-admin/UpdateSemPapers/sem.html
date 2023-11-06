@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semester Paper Upload</title>
+    <link rel="stylesheet" href="sem.css">
+    <script src="https://kit.fontawesome.com/16288edb0a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h1>Upload Semester Papers</h1>
+        <a href="../Grid/grid.html"><i class="fa-solid fa-backward fa-sm" style="color: #ffffff;"></i>Back</a>
+    </header>
+
+    <div id="upload-status" class="hidden">
+        <p>Seminar Papers successfully uploaded!</p>
+    </div>
+
+    <div id="error-message" class="error-message"></div>
+
+    <div class="parent">
+        <div class="container">
+            <h1>Semester Paper Upload</h1>
+            <form id="upload-form" enctype="multipart/form-data">
+                <input type="file" name="files[]" id="file-input" multiple>
+                <button type="submit">Upload Semester Papers</button>
+            </form>
+        </div>
+    </div>
+    <script src="sem.js"></script>
+</body>
+</html>

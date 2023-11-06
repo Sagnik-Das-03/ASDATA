@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>File Upload Page</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+	<!-- Add this div for upload status -->
+	<div id="upload-status" class="hidden">
+		<p>Files successfully uploaded!</p>
+	</div>
+	<!-- Add this div for the error message -->
+	<div id="error-message" class="error-message"></div>
+	<div class="parent">
+		<div class="container">
+			<h1>Files Upload</h1>
+			<form id="upload-form" enctype="multipart/form-data">
+				<input type="file" name="files[]" id="file-input" multiple>
+				<button type="submit">Upload Files</button>
+			</form>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+
+</html>

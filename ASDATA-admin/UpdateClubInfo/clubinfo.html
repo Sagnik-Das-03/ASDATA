@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="clubinfo.css">
+    <script src="https://kit.fontawesome.com/16288edb0a.js" crossorigin="anonymous"></script>
+    <title>Club Info Admin Page</title>
+</head>
+<body>
+    <header>
+        <h1>Club Info Admin Page</h1>
+        <div>
+            <a href="../Grid/grid.html"><i class="fa-solid fa-backward fa-sm" style="color: #ffffff;"></i>Back</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="club-info">
+            <h2>Club Information</h2>
+            <form id="club-info-form">
+                <label for="club-name">Club Name:</label>
+                <input type="text" id="club-name" name="club-name" required>
+                
+                <label for="club-description">Description:</label>
+                <textarea id="club-description" name="club-description" rows="4" required></textarea>
+                
+                <label for="club-logo">Club Logo (URL):</label>
+                <input type="url" id="club-logo" name="club-logo">
+                
+                <button type="submit">Update Club Info</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="clubinfo.js"></script>
+</body>
+</html>

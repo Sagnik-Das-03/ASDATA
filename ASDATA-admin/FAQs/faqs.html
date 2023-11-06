@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="faqs.css">
+    <script src="https://kit.fontawesome.com/16288edb0a.js" crossorigin="anonymous"></script>
+    <title>FAQs</title>
+</head>
+<header>
+    <h1>Upload Semester Papers</h1>
+    <a href="../Grid/grid.html"><i class="fa-solid fa-backward fa-sm" style="color: #ffffff;"></i>Back</a>
+</header>
+<body>
+    <div class="modal-parent">
+        <div class="faq-list">
+            <ul id="question-list">
+                <!-- Questions will be dynamically added here -->
+            </ul>
+        </div>        
+        <div id="modal" class="modal">
+            <button id="close-button" onclick="closeModal()"><i class="fa-solid fa-xmark fa-2xl" style="color: #ffffff;"></i></button>
+            <div class="modal-content">
+                <h2 class="modal-header"></h2>
+                <textarea id="answer-text" class="modal-textarea" rows="10"
+                    placeholder="Enter your answer here..."></textarea>
+                <div class="modal-buttons">
+                    <button class="clear-button" onclick="clearAnswer()">Clear</button>
+                    <button class="submit-button" onclick="submitAnswer()">Submit</button>
+                </div>
+                <div id="submit-message" class="submit-message"></div>
+                <div class="error-message" id="error-message"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="faqs.js"></script>
+</body>
+
+</html>
