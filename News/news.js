@@ -1,5 +1,5 @@
 const collegeNews = [
-    "College News 1",
+    "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://bangla.hindustantimes.com/career/dr-b-c-roy-engineering-college-is-now-poised-for-autonomy/amp-31683209065188.html&ved=2ahUKEwieo7ujouSCAxXMp1YBHadDBAkQyM8BKAB6BAgHEAI&usg=AOvVaw0NEGxFFWYHk6Di_q5epHQ-",
     "College News 2",
     "College News 3"
 ];
@@ -21,13 +21,30 @@ function populateNewsList(newsArray, listId) {
     newsArray.forEach((item, index) => {
         const li = document.createElement("li");
         const link = document.createElement("a");
-        link.href = (index === 0 && newsArray === techNews) ? item : "#";
+
+        if (index === 0 && newsArray === techNews && isValidURL(item)) {
+            link.href = item; // Use the provided URL for the first item in techNews
+        } else {
+            link.href = item // Placeholder link for other items or non-URLs
+        }
+
         link.target = "_blank";
-        link.textContent = (index === 0 && newsArray === techNews) ? "Google Developer Group Durgapur's DevFest 2023: A Triumph of Innovation and Resilience Uniting Bengal's Tech Enthusiasts" : item;
+        link.textContent = item; // Set the text content to the actual content of the item
         li.appendChild(link);
         newsList.appendChild(li);
     });
 }
+
+// Function to check if a string is a valid URL
+function isValidURL(str) {
+    try {
+        new URL(str);
+        return true;
+    } catch (error) {
+        return false;
+    }
+}
+
 
 function toggleNews(sectionId) {
     const newsList = document.getElementById(sectionId);
