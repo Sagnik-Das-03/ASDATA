@@ -11,8 +11,8 @@ const techNews = [
 ];
 
 const clubNews = [
-    "Club News 1",
-    "Club News 2",
+    "https://m.facebook.com/story.php?story_fbid=pfbid02ni7oBtzF7Jh5kvWzxUz1EKQCCrRg4EEfTiDjUThF1n8FpwAbSFuQpGnoggsesLFol&id=100063657649909&mibextid=CDWPTG",
+    "https://m.facebook.com/story.php?story_fbid=pfbid0315xNvoDmSgcZ91tU2WykhvRwS8TBZehQxWCsyWeiheKDVSXC7dwoN7ZrsYH7XHExl&id=100063657649909&mibextid=CDWPTG",
     "Club News 3"
 ];
 
