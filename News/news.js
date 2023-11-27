@@ -1,4 +1,3 @@
-// Define news items as arrays
 const collegeNews = [
     "College News 1",
     "College News 2",
@@ -6,7 +5,7 @@ const collegeNews = [
 ];
 
 const techNews = [
-    "Local Tech News 1",
+    "https://www.telegraphindia.com/edugraph/campus/google-developer-group-durgapurs-devfest-2023-a-triumph-of-innovation-and-resilience-uniting-bengals-tech-enthusiasts/cid/1978834?utm_source=whatsapp&utm_medium=social&utm_campaign=whatsapp_edugraph",
     "Local Tech News 2",
     "Local Tech News 3"
 ];
@@ -17,12 +16,15 @@ const clubNews = [
     "Club News 3"
 ];
 
-// Function to populate the news lists
 function populateNewsList(newsArray, listId) {
     const newsList = document.getElementById(listId);
-    newsArray.forEach((item) => {
+    newsArray.forEach((item, index) => {
         const li = document.createElement("li");
-        li.textContent = item;
+        const link = document.createElement("a");
+        link.href = (index === 0 && newsArray === techNews) ? item : "#";
+        link.target = "_blank";
+        link.textContent = (index === 0 && newsArray === techNews) ? "Google Developer Group Durgapur's DevFest 2023: A Triumph of Innovation and Resilience Uniting Bengal's Tech Enthusiasts" : item;
+        li.appendChild(link);
         newsList.appendChild(li);
     });
 }
@@ -36,7 +38,6 @@ function toggleNews(sectionId) {
     }
 }
 
-
 function toggleAllNews() {
     const sections = document.querySelectorAll('.news-list');
     sections.forEach((section) => {
@@ -48,8 +49,7 @@ function toggleAllNews() {
     });
 }
 
-
-// Call the populateNewsList function for each section
+// Populate the news lists
 populateNewsList(collegeNews, "college");
 populateNewsList(techNews, "tech");
 populateNewsList(clubNews, "club");
