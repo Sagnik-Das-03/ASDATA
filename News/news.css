@@ -75,8 +75,8 @@ nav a:hover {
   padding-right: 25px;
 }
 
-nav a:active{
-  background: linear-gradient(to bottom left,rgba(0, 255, 255, 0.6), rgba(255, 0, 255, 0.6));
+nav a:active {
+  background: linear-gradient(to bottom left, rgba(0, 255, 255, 0.6), rgba(255, 0, 255, 0.6));
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   color: rgb(255, 255, 255);
 }
@@ -110,14 +110,13 @@ nav a:active{
 }
 
 .container {
-  margin-left: 15%;
-  width: 70%;
   background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.1));
   border-radius: 2rem;
   padding: 20px;
   z-index: 0;
   backdrop-filter: blur(10px);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: scroll;
 }
 
 .sections-row {
@@ -160,7 +159,7 @@ nav a:active{
   color: whitesmoke;
 }
 
-.section h2:active{
+.section h2:active {
   background: linear-gradient(to right, rgba(0, 255, 255, 0.75), rgba(255, 155, 0, 0.5));
   color: rgb(40, 40, 40);
   color: rgb(0, 0, 0);
@@ -182,8 +181,11 @@ nav a:active{
   border-radius: 5px;
   font-weight: bold;
   width: 80%;
-  margin-left: 10%;
+  margin: 20px auto 0;
+  display: flex;
+  justify-content: center;
 }
+
 
 .toggle-button:hover {
   background: linear-gradient(to right, #0072ff, #00c6ff);
@@ -192,7 +194,7 @@ nav a:active{
 
 }
 
-.toggle-button:active{
+.toggle-button:active {
   background: linear-gradient(to right, rgba(0, 255, 255, 0.75), rgba(255, 255, 0, 0.5));
   color: rgb(40, 40, 40);
   backdrop-filter: blur(10px);
