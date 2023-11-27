@@ -14,20 +14,20 @@ body{
     background: linear-gradient(to bottom left,  rgb(255, 99, 71), aquamarine);
 }
 
-i{
-    padding: 10px;
-}
-
 header {
     display: flex;
     color: #fff;
     text-align: center;
-    padding: 1%;
+    padding: 20px;
     align-content: center;
     justify-content: flex-end;
     flex-direction: row;
     background: linear-gradient(to left, rgba(40, 80, 120, 0.4), rgba(60, 120, 180, 0.6));
     color: white;
+}
+
+i{
+    padding: 10px;
 }
 
 header h1{
@@ -42,9 +42,10 @@ header a {
     background-color: navy;
     border-radius: 10px;
     padding: 10px 30px;
-    margin: auto;
+    margin-top: 1%;
 }
 
+/* Style for the admin panel section */
 .admin-panel {
     background: linear-gradient(to bottom left,  rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.3));
     padding:3% 2%;
@@ -55,6 +56,7 @@ header a {
     backdrop-filter: blur(20px);
 }
 
+/* Style for form elements */
 form label, form button {
     display: block;
     margin: 5px 20px;
@@ -86,7 +88,7 @@ form input, form textarea {
 form textarea {
     resize: vertical;
 }
-
+/* Style for the news list */
 .news-list {
     padding: 2%;
     margin: 4%;
@@ -96,6 +98,7 @@ form textarea {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
+/* Style for individual news items */
 .news-list li {
     background: linear-gradient(to bottom left, rgba(191, 191, 191, 0.3), rgba(255, 255, 255, 0.2));
     padding: 1% 3%;
@@ -115,6 +118,7 @@ form textarea {
     padding: 1%;
 }
 
+/* Style for edit and delete buttons */
 .edit-button, .delete-button {
     background: linear-gradient(to left, tomato, darkcyan);
     color: white;
