@@ -1,20 +1,14 @@
 const collegeNews = [
-    "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://bangla.hindustantimes.com/career/dr-b-c-roy-engineering-college-is-now-poised-for-autonomy/amp-31683209065188.html&ved=2ahUKEwieo7ujouSCAxXMp1YBHadDBAkQyM8BKAB6BAgHEAI&usg=AOvVaw0NEGxFFWYHk6Di_q5epHQ-",
-    "College News 2",
-    "College News 3"
+    "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://bangla.hindustantimes.com/career/dr-b-c-roy-engineering-college-is-now-poised-for-autonomy/amp-31683209065188.html&ved=2ahUKEwieo7ujouSCAxXMp1YBHadDBAkQyM8BKAB6BAgHEAI&usg=AOvVaw0NEGxFFWYHk6Di_q5epHQ-"
 ];
 
 const techNews = [
-    "https://www.telegraphindia.com/edugraph/campus/google-developer-group-durgapurs-devfest-2023-a-triumph-of-innovation-and-resilience-uniting-bengals-tech-enthusiasts/cid/1978834?utm_source=whatsapp&utm_medium=social&utm_campaign=whatsapp_edugraph",
-    "Local Tech News 2",
-    "Local Tech News 3"
+    "https://www.telegraphindia.com/edugraph/campus/google-developer-group-durgapurs-devfest-2023-a-triumph-of-innovation-and-resilience-uniting-bengals-tech-enthusiasts/cid/1978834?utm_source=whatsapp&utm_medium=social&utm_campaign=whatsapp_edugraph"
 ];
 
 const clubNews = [
     "https://m.facebook.com/story.php?story_fbid=pfbid02ni7oBtzF7Jh5kvWzxUz1EKQCCrRg4EEfTiDjUThF1n8FpwAbSFuQpGnoggsesLFol&id=100063657649909&mibextid=CDWPTG",
-    "https://m.facebook.com/story.php?story_fbid=pfbid0315xNvoDmSgcZ91tU2WykhvRwS8TBZehQxWCsyWeiheKDVSXC7dwoN7ZrsYH7XHExl&id=100063657649909&mibextid=CDWPTG",
-    "Club News 3"
-];
+    "https://m.facebook.com/story.php?story_fbid=pfbid0315xNvoDmSgcZ91tU2WykhvRwS8TBZehQxWCsyWeiheKDVSXC7dwoN7ZrsYH7XHExl&id=100063657649909&mibextid=CDWPTG"];
 
 function populateNewsList(newsArray, listId) {
     const newsList = document.getElementById(listId);
